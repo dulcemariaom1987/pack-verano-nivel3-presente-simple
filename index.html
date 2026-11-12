@@ -1,0 +1,664 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<title>Pack verano jugando en inglés · Nivel 3 · Presente simple</title>
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Fredoka:wght@400;600;700&display=swap">
+<style>
+:root{--ink:#23224a;--pink:#ff4fa3;--cyan:#27e1ff;--yellow:#ffd23f;--green:#2ee6a6;--orange:#ff8a3d;--purple:#8a5cff;--bad:#ff5a6e;
+box-sizing:border-box;padding-top:env(safe-area-inset-top,0px);padding-bottom:env(safe-area-inset-bottom,0px)}
+*,*::before,*::after{box-sizing:inherit}
+html{scroll-padding-top:env(safe-area-inset-top,0px)}
+body{margin:0;min-height:100vh;font-family:'Fredoka','Baloo 2','Trebuchet MS','Segoe UI',system-ui,sans-serif;font-size:18px;color:var(--ink);
+background:linear-gradient(160deg,#1b1464,#0c4a8a 60%,#0a8f9c) fixed;color-scheme:dark;overflow-x:hidden}
+header{text-align:center;padding:18px 12px 6px;position:relative}
+h1{margin:0;font-size:clamp(2.1rem,8vw,5rem);line-height:1.05;letter-spacing:1px;text-transform:uppercase;font-weight:700}
+h1 span{display:block}
+.l1,.l2,.sub{width:fit-content;margin-inline:auto;background-size:200% 100%;-webkit-background-clip:text;background-clip:text;color:transparent;-webkit-text-fill-color:transparent;animation:shine 6s linear infinite alternate;filter:drop-shadow(0 0 4px var(--n)) drop-shadow(0 0 14px var(--n))}
+.l1{--n:#ff2e93;background-image:linear-gradient(90deg,#ff2e93,#ff8a3d,#ffd23f,#ff8a3d,#ff2e93)}
+.l2{--n:#27e1ff;background-image:linear-gradient(90deg,#27e1ff,#2ee6a6,#c3ff4d,#8a5cff,#27e1ff)}
+.sub{--n:#ffd23f;background-image:linear-gradient(90deg,#ffd23f,#ff8a3d,#ff4fa3,#c27bff,#ffd23f);margin:10px auto 0;font-size:clamp(1.1rem,4vw,2rem);font-weight:700;text-transform:uppercase;letter-spacing:3px}
+.badge{position:absolute;right:12px;top:12px;background:#ffffff26;color:#fff;border-radius:999px;padding:4px 14px;font-weight:700}
+nav{position:sticky;top:env(safe-area-inset-top,0px);z-index:5;display:flex;gap:8px;overflow-x:auto;padding:10px 8px;margin-top:10px;background:#0b0b3dd9;backdrop-filter:blur(8px);scrollbar-width:thin}
+nav button{flex:0 0 auto;min-width:84px;font:inherit;font-size:.78rem;font-weight:600;color:#fff;background:#ffffff1f;border:2px solid transparent;border-radius:16px;padding:6px 8px;cursor:pointer;display:flex;flex-direction:column;align-items:center;gap:2px;transition:transform .15s}
+nav button i{font-style:normal;font-size:1.5rem}
+nav button:hover{transform:translateY(-3px)}
+nav button.on{background:linear-gradient(135deg,var(--pink),var(--orange));border-color:#fff;box-shadow:0 0 14px var(--pink)}
+main{padding:8px 12px 40px}
+.sec{animation:fade .5s}
+.card{background:#fff;border-radius:26px;padding:clamp(14px,3vw,28px);box-shadow:0 10px 30px #0006;max-width:920px;margin:12px auto}
+.card h2{margin:0 0 8px;font-size:clamp(1.4rem,5vw,2rem)}
+.card p{line-height:1.45}
+.btn{font:inherit;font-weight:600;border:0;border-radius:999px;padding:.65em 1.3em;margin:4px;color:#fff;background:linear-gradient(135deg,var(--pink),var(--orange));box-shadow:0 5px 0 #0003;cursor:pointer;transition:transform .15s}
+.btn.alt{background:linear-gradient(135deg,var(--purple),#27a9ff)}
+.btn.ghost{background:#8a8aa8}
+.btn:hover{transform:translateY(-2px)}.btn:active{transform:translateY(3px);box-shadow:none}
+.btn:disabled{opacity:.5;cursor:default}
+.row{display:flex;flex-wrap:wrap;justify-content:center;align-items:center;margin-top:10px}
+.fb{min-height:1.6em;font-weight:600;text-align:center}
+.prog{font-weight:700;color:var(--purple)}
+.q{font-size:clamp(1.3rem,5vw,2rem);font-weight:700;margin:6px 0 12px}
+.opt{display:block;width:100%;font:inherit;text-align:left;margin:8px 0;padding:12px 16px;border:3px solid #dcdcf0;border-radius:16px;background:#f8f8ff;color:var(--ink);cursor:pointer;transition:.15s}
+.opt:hover{border-color:var(--cyan)}
+.opt.sel{border-color:var(--purple);background:#efe9ff}
+.opt.good{border-color:var(--green);background:#d9fff1}
+.opt.shake{animation:shake .4s}
+.card h3{margin:18px 0 6px}
+.rule{background:#f6f4ff;border-radius:18px;padding:10px 14px;margin:10px 0;border-left:10px solid var(--c)}
+.rule p{margin:4px 0}
+.chip.ex{font:inherit;font-weight:600;border:0;cursor:pointer;color:var(--ink)}
+.chip.ex:hover{background:#ffe3f1}
+.chips{display:flex;flex-wrap:wrap;gap:8px;justify-content:center;margin:12px 0}
+.chip{background:#eef3ff;border-radius:999px;padding:6px 14px;font-weight:600}
+.chip b{color:var(--pink)}
+.vgrid{display:grid;grid-template-columns:repeat(auto-fill,minmax(210px,1fr));gap:14px}
+.vcard{background:linear-gradient(160deg,#f3f0ff,#e6fbff);border-radius:20px;padding:14px;text-align:center;border:3px solid #fff;box-shadow:0 4px 14px #0002;transition:transform .2s}
+.vcard:hover{transform:translateY(-5px) rotate(-1deg)}
+.vcard .ic{font-size:3rem;animation:float 3s ease-in-out infinite}
+.vcard .en{font-size:1.7rem;font-weight:700;color:var(--purple)}
+.vcard small{display:block;color:#5a5a85}
+.slots{display:flex;flex-wrap:wrap;gap:8px;justify-content:center;margin:12px 0}
+.tile{font:inherit;font-weight:700;font-size:1.6rem;width:48px;height:56px;border:0;border-radius:12px;background:linear-gradient(135deg,var(--cyan),var(--purple));color:#fff;box-shadow:0 4px 0 #0003;cursor:pointer;text-transform:uppercase}
+.tile.empty{background:#e3e3f3;box-shadow:inset 0 2px 5px #0003;cursor:default}
+.tile:disabled{opacity:.3}
+.big .tile{background:none;color:var(--ink);box-shadow:none;border-bottom:4px solid var(--purple);cursor:default;border-radius:0;width:38px}
+.match{display:grid;grid-template-columns:1fr 1fr;gap:16px}
+.match .col{display:flex;flex-direction:column;gap:10px}
+.m{font:inherit;font-weight:600;padding:12px;border:3px solid #dcdcf0;border-radius:14px;background:#f8f8ff;color:var(--ink);cursor:pointer}
+.m.lock{border-color:var(--green)!important;background:#d9fff1!important;cursor:default}
+.m.pick{outline:4px solid var(--yellow)}
+.ws{display:grid;gap:4px;max-width:440px;margin:12px auto;touch-action:manipulation}
+.ws button{aspect-ratio:1;font:inherit;font-weight:700;font-size:clamp(.9rem,4vw,1.3rem);padding:0;border:0;border-radius:8px;background:#eef3ff;color:var(--ink);cursor:pointer}
+.ws button.sel{background:var(--yellow)}
+.ws button.found{background:var(--green);color:#fff}
+.memg{display:grid;grid-template-columns:repeat(4,1fr);gap:10px;max-width:560px;margin:12px auto}
+.mem{perspective:600px;aspect-ratio:1/1.1;border:0;background:none;padding:0;cursor:pointer;font:inherit}
+.inner{display:block;position:relative;width:100%;height:100%;transition:transform .5s;transform-style:preserve-3d}
+.mem.on .inner{transform:rotateY(180deg)}
+.face{position:absolute;inset:0;display:flex;align-items:center;justify-content:center;border-radius:14px;backface-visibility:hidden;font-weight:700;font-size:clamp(.85rem,3.6vw,1.3rem);padding:4px;color:#fff;box-shadow:0 4px 10px #0003}
+.front{background:linear-gradient(135deg,var(--pink),var(--orange));font-size:2rem}
+.back{background:linear-gradient(135deg,var(--cyan),var(--purple));transform:rotateY(180deg)}
+.mem.done .back{background:linear-gradient(135deg,var(--green),#27a9ff)}
+.popwrap{display:flex;flex-wrap:wrap;gap:16px;align-items:center;justify-content:center}
+.pop{--m:0;width:min(340px,88vw);height:auto;overflow:hidden;border-radius:26px;box-shadow:0 8px 22px #0004}
+.pop .hot{opacity:calc(var(--m)*.85)}
+.pop .sun,.pop .rays{transform-origin:245px 62px}
+.pop .sun{transform:scale(calc(1 + var(--m)*.55));transition:transform .9s}
+.pop .rays{animation:spin 12s linear infinite}
+.pop .cloud{opacity:calc(1 - var(--m));animation:drift 9s ease-in-out infinite alternate}
+.pop .heat{opacity:calc(var(--m)*1.2);animation:wave 1.1s ease-in-out infinite alternate}
+.pop .bob{animation:float 3s ease-in-out infinite}
+.pop .body{transform-origin:100px 200px;transform:scale(calc(1 + var(--m)*.25),calc(1 - var(--m)*.8));transition:transform .9s cubic-bezier(.3,1.5,.5,1)}
+.pop .puddle{transform-origin:100px 266px;transform:scale(calc(1 + var(--m)*2.2),calc(1 + var(--m)*.6));transition:transform .9s}
+.pop .drops{opacity:calc(var(--m)*3)}
+.pop .dr{fill:#ff7eb6;animation:drip 1.2s infinite ease-in}
+.pop .d2{animation-delay:.3s}.pop .d3{animation-delay:.6s}.pop .d4{animation-delay:.9s}.pop .d5{animation-delay:.15s}
+.pop .shine{animation:glint 3.5s ease-in-out infinite}
+.pop .eyes{transform-origin:100px 100px;animation:blink 4s infinite}
+.pop .brow{transform-box:fill-box;transform-origin:center}
+.pop .bl{transform:rotate(calc(var(--m)*-28deg))}.pop .br{transform:rotate(calc(var(--m)*28deg))}
+.pop .sweat{opacity:calc(var(--m)*2 - .5);animation:sweat 1.5s infinite}
+.pop .frost{opacity:calc(1 - var(--m)*1.5)}
+.pop .frost circle,.pop .stars path{transform-box:fill-box;transform-origin:center;animation:twinkle 1.6s ease-in-out infinite}
+.pop .shades{opacity:0;transform:translateY(-26px);transition:.5s .2s}
+.pop.win .shades{opacity:1;transform:none}
+.pop .rainbow path{stroke-dasharray:400;stroke-dashoffset:400;transition:stroke-dashoffset 1.3s ease-out}
+.pop.win .rainbow path{stroke-dashoffset:0}
+.pop .stars{opacity:0;transition:opacity .4s}.pop.win .stars{opacity:1}
+.pop.win .bob{animation:jump .7s ease-in-out 4}
+.pop.lose .bob{animation:none}
+.pop .sp{animation:splash .8s ease-out forwards}
+.kb{display:grid;grid-template-columns:repeat(auto-fill,minmax(40px,1fr));gap:6px;max-width:420px;margin:auto}
+.key{font:inherit;font-weight:700;padding:8px 0;border:0;border-radius:10px;background:var(--yellow);color:var(--ink);box-shadow:0 3px 0 #0003;cursor:pointer}
+.key:disabled{opacity:.3}
+.cf{position:fixed;top:-40px;z-index:20;pointer-events:none;animation:cf linear forwards}
+.bg{position:fixed;inset:0;pointer-events:none;z-index:-1;overflow:hidden}
+.bg span{position:absolute;bottom:-60px;opacity:.35;animation:rise linear infinite}
+@keyframes shine{to{background-position:100% 0}}
+@keyframes spin{to{transform:rotate(360deg)}}
+@keyframes drift{to{transform:translateX(34px)}}
+@keyframes wave{to{transform:translateY(-8px)}}
+@keyframes glint{0%{transform:translateX(-140px)}60%,100%{transform:translateX(170px)}}
+@keyframes blink{0%,94%,100%{transform:scaleY(1)}97%{transform:scaleY(.1)}}
+@keyframes sweat{to{transform:translateY(18px)}}
+@keyframes twinkle{50%{opacity:.25;transform:scale(1.7)}}
+@keyframes jump{50%{transform:translateY(-28px)}}
+@keyframes splash{to{transform:translate(var(--dx),calc(var(--dy) + 24px));opacity:0}}
+@keyframes flick{0%,18%,22%,62%,64%,100%{opacity:1}20%,63%{opacity:.7}}
+@keyframes fade{from{opacity:0;transform:translateY(14px)}}
+@keyframes shake{25%{transform:translateX(-8px)}75%{transform:translateX(8px)}}
+@keyframes float{50%{transform:translateY(-5px)}}
+@keyframes pop{50%{transform:scale(1.12) rotate(4deg)}}
+@keyframes drip{0%{transform:translateY(0);opacity:1}100%{transform:translateY(62px);opacity:0}}
+@keyframes cf{to{transform:translateY(110vh) rotate(540deg)}}
+@keyframes rise{to{transform:translateY(-115vh) rotate(40deg)}}
+@media(max-width:520px){body{font-size:16px}.badge{position:static;display:inline-block;margin-top:8px}.match{gap:8px}.tile{width:42px;height:50px}}
+@media(prefers-reduced-motion:reduce){*{animation-duration:.01s!important}}
+</style>
+</head>
+<body>
+<div class="bg" id="bg" aria-hidden="true"></div>
+<header>
+  <h1 class="neon"><span class="l1">Pack verano</span><span class="l2">jugando en inglés</span></h1>
+  <p class="sub neon">Nivel 3 · Presente simple</p>
+  <div class="badge">⭐ <b id="stars">0</b></div>
+</header>
+<nav id="menu" aria-label="Secciones de la clase"></nav>
+<main id="main"></main>
+
+<script>
+'use strict';
+
+/* ---------- Utilities ---------- */
+const $ = (s, r = document) => r.querySelector(s);
+const rnd = n => Math.floor(Math.random() * n);
+const shuffle = a => { const r = [...a]; for (let i = r.length - 1; i > 0; i--) { const j = rnd(i + 1); [r[i], r[j]] = [r[j], r[i]]; } return r; };
+const h = (tag, props = {}, ...kids) => {
+  const e = document.createElement(tag);
+  for (const [k, v] of Object.entries(props)) {
+    if (k === 'text') e.textContent = v;
+    else if (k.startsWith('on')) e.addEventListener(k.slice(2), v);
+    else e.setAttribute(k === 'class' ? 'class' : k, v);
+  }
+  e.append(...kids);
+  return e;
+};
+const card = (title, ...kids) => h('div', { class: 'card' }, h('h2', { text: title }),
+  ...kids.map(k => typeof k === 'string' ? h('p', { text: k }) : k));
+
+/* ---------- Services: sound effects, voice, score, confetti ---------- */
+const Sfx = {
+  ctx: null,
+  tone(freq, at = 0, dur = .15, type = 'sine') {
+    try {
+      this.ctx = this.ctx || new (window.AudioContext || window.webkitAudioContext)();
+      const c = this.ctx; if (c.state === 'suspended') c.resume();
+      const o = c.createOscillator(), g = c.createGain(), t = c.currentTime + at;
+      o.type = type; o.frequency.value = freq; o.connect(g); g.connect(c.destination);
+      g.gain.setValueAtTime(.15, t); g.gain.exponentialRampToValueAtTime(.001, t + dur);
+      o.start(t); o.stop(t + dur);
+    } catch (e) { /* sound not available */ }
+  },
+  play(name) {
+    const seq = {
+      click: [[660, 0, .08]], flip: [[440, 0, .06, 'triangle']], bad: [[220, 0, .12, 'sawtooth'], [170, .12, .2, 'sawtooth']],
+      ok: [[523, 0, .12], [659, .1, .12], [784, .2, .2]], drip: [[900, 0, .08], [600, .08, .1]],
+      win: [[523, 0, .15], [659, .15, .15], [784, .3, .15], [1047, .45, .45]]
+    }[name] || [];
+    seq.forEach(a => this.tone(...a));
+  }
+};
+const Voice = {
+  stop() { if ('speechSynthesis' in window) speechSynthesis.cancel(); },
+  speak(segments) {
+    if (!('speechSynthesis' in window)) return;
+    this.stop();
+    [].concat(segments).forEach(seg => {
+      const { t, l = 'en-US' } = typeof seg === 'string' ? { t: seg } : seg;
+      const u = new SpeechSynthesisUtterance(t);
+      u.lang = l; u.rate = l === 'en-US' ? .85 : .95;
+      const v = speechSynthesis.getVoices().find(x => x.lang.replace('_', '-') === l);
+      if (v) u.voice = v;
+      speechSynthesis.speak(u);
+    });
+  }
+};
+const ES = t => ({ t, l: 'es-ES' });
+const State = { stars: 0, add(n) { this.stars += n; $('#stars').textContent = this.stars; } };
+function confetti(n = 36) {
+  const em = ['🎉', '⭐', '🍦', '🌟', '🎈', '☀️'];
+  for (let i = 0; i < n; i++) {
+    const s = h('span', { class: 'cf', text: em[i % em.length] });
+    s.style.cssText = `left:${Math.random() * 100}vw;animation-duration:${2 + Math.random() * 2}s;animation-delay:${Math.random() * .6}s;font-size:${18 + Math.random() * 20}px`;
+    document.body.append(s); setTimeout(() => s.remove(), 5200);
+  }
+}
+function finishSection(body, msg) {
+  Sfx.play('win'); confetti();
+  body.replaceChildren(h('h2', { text: '🎉 ' + msg }), h('p', { text: '¡Muy bien! Sigue con la próxima sección.' }),
+    h('div', { class: 'row' }, h('button', { class: 'btn', text: 'Siguiente sección ➜', onclick: () => Nav.next() })));
+}
+
+/* ---------- Content ---------- */
+const WORDS = [
+  { en: 'play', es: 'jugar', ic: '⚽', s3: 'plays', ex: 'I play soccer.', exEs: 'Yo juego fútbol.' },
+  { en: 'swim', es: 'nadar', ic: '🏊', s3: 'swims', ex: 'She swims in the sea.', exEs: 'Ella nada en el mar.' },
+  { en: 'read', es: 'leer', ic: '📖', s3: 'reads', ex: 'He reads a book.', exEs: 'Él lee un libro.' },
+  { en: 'study', es: 'estudiar', ic: '✏️', s3: 'studies', ex: 'We study English.', exEs: 'Nosotros estudiamos inglés.' },
+  { en: 'sleep', es: 'dormir', ic: '😴', s3: 'sleeps', ex: 'The cat sleeps a lot.', exEs: 'El gato duerme mucho.' },
+  { en: 'drink', es: 'beber', ic: '🥤', s3: 'drinks', ex: 'They drink juice.', exEs: 'Ellos beben jugo.' },
+  { en: 'watch', es: 'mirar', ic: '📺', s3: 'watches', ex: 'I watch TV.', exEs: 'Yo miro la tele.' },
+  { en: 'cook', es: 'cocinar', ic: '🍳', s3: 'cooks', ex: 'My mom cooks pizza.', exEs: 'Mi mamá cocina pizza.' }
+];
+const QUIZ = [
+  { q: 'She ____ soccer every day.', opts: ['play', 'plays', 'playing'], a: 1 },
+  { q: 'I ____ English at school.', opts: ['study', 'studies', 'studys'], a: 0 },
+  { q: 'He ____ a book.', opts: ['read', 'reading', 'reads'], a: 2 },
+  { q: 'They ____ juice.', opts: ['drinks', 'drink', 'drinking'], a: 1 },
+  { q: 'My dog ____ a lot.', opts: ['sleep', 'sleeps', 'sleeping'], a: 1 }
+];
+const TRUEFALSE = [
+  { q: 'Con he, she e it, el verbo lleva una -s: «He plays».', opts: ['Verdadero', 'Falso'], a: 0 },
+  { q: 'Con I, el verbo lleva -s: «I plays».', opts: ['Verdadero', 'Falso'], a: 1 },
+  { q: '«They swim in the pool» está bien escrita.', opts: ['Verdadero', 'Falso'], a: 0 },
+  { q: '«We watches TV» está bien escrita.', opts: ['Verdadero', 'Falso'], a: 1 },
+  { q: '«Cook» significa «nadar».', opts: ['Verdadero', 'Falso'], a: 1 }
+];
+const LISTEN = [
+  { say: 'I swim in the sea.', opts: ['Yo nado en el mar.', 'Yo duermo en el mar.', 'Yo cocino en el mar.'], a: 0 },
+  { say: 'He plays soccer.', opts: ['Él mira fútbol.', 'Él juega fútbol.', 'Él lee fútbol.'], a: 1 },
+  { say: 'We study English.', opts: ['Nosotros estudiamos inglés.', 'Nosotros bebemos inglés.', 'Nosotros cocinamos inglés.'], a: 0 },
+  { say: 'She drinks juice.', opts: ['Ella cocina jugo.', 'Ella bebe jugo.', 'Ella lee jugo.'], a: 1 },
+  { say: 'They watch TV.', opts: ['Ellos miran la tele.', 'Ellos nadan en la tele.', 'Ellos juegan tele.'], a: 0 }
+];
+
+/* ---------- Sections (each one: {id, icon, label, mount(el)}) ---------- */
+const RULES = [
+  { c: '#ff4fa3', t: '1️⃣ Regla general: agrega «s»', note: 'La mayoría de los verbos solo recibe una «s» al final.', ex: ['play → plays', 'read → reads', 'cook → cooks', 'swim → swims'] },
+  { c: '#27c7e8', t: '2️⃣ Si termina en o, ch, sh, s, x o z: agrega «es»', note: 'Son sonidos fuertes: con «es» se pueden pronunciar bien. Truco para recordar: o · ch · sh · s · x · z.', ex: ['go → goes', 'do → does', 'watch → watches', 'wash → washes', 'kiss → kisses', 'fix → fixes', 'buzz → buzzes'] },
+  { c: '#8a5cff', t: '3️⃣ Consonante + y: cambia la «y» por «ies»', note: 'Mira la letra que está antes de la «y». Si es una consonante (b, c, d, f, g, l, m, n, p, r, s, t...), quita la «y» y escribe «ies».', ex: ['study → studies', 'cry → cries', 'fly → flies', 'try → tries'] },
+  { c: '#1ec98f', t: '4️⃣ Vocal + y: solo agrega «s»', note: 'Si antes de la «y» hay una vocal (a, e, i, o, u), la «y» no cambia.', ex: ['play → plays', 'enjoy → enjoys', 'say → says', 'buy → buys'] },
+  { c: '#ff8a3d', t: '⭐ Verbo especial: have', note: '«Have» no sigue las reglas: cambia por completo.', ex: ['have → has'] }
+];
+const ruleCard = r => {
+  const box = h('div', { class: 'rule' }, h('b', { text: r.t }), h('p', { text: r.note }),
+    h('div', { class: 'chips' }, ...r.ex.map(x => h('button', { class: 'chip ex', text: '🔊 ' + x, onclick: () => { Sfx.play('click'); Voice.speak('he ' + x.split('→')[1].trim()); } }))));
+  box.style.setProperty('--c', r.c); return box;
+};
+
+const introSection = () => ({
+  id: 'inicio', icon: '🏖️', label: 'Inicio',
+  mount(el) {
+    const speech = [
+      ES('¡Hola! Hoy aprenderás el presente simple. Sirve para hablar de lo que haces siempre o todos los días.'),
+      'I play. You play. We play. They play.',
+      ES('Con he, she e it, el verbo lleva una ese al final.'),
+      'He plays. She plays. It plays.',
+      ES('Ahora las reglas para he, she e it. Regla uno: la mayoría de los verbos solo agrega una ese.'), 'He plays. She reads.',
+      ES('Regla dos: si el verbo termina en o, ch, sh, s, x o z, se agrega e ese.'), 'He goes. She watches. He washes. It fixes.',
+      ES('Regla tres: si termina en consonante más i griega, la i griega cambia por i e ese.'), 'He studies. She cries.',
+      ES('Regla cuatro: si termina en vocal más i griega, solo se agrega ese.'), 'He plays. She enjoys.',
+      ES('El verbo have es especial.'), 'She has a dog.',
+      ES('Son once secciones y dura unos treinta minutos. ¡Vamos a jugar!')
+    ];
+    el.append(card('¡Bienvenido al verano! ☀️',
+      'Hoy aprenderás el PRESENTE SIMPLE: lo usamos para hablar de lo que haces siempre o todos los días.',
+      h('div', { class: 'chips' }, ...['I', 'you', 'we', 'they'].map(p => h('span', { class: 'chip' }, h('b', { text: p }), ' play'))),
+      '👆 Con I, you, we y they el verbo NO cambia.',
+      h('div', { class: 'chips' }, ...['he', 'she', 'it'].map(p => h('span', { class: 'chip' }, h('b', { text: p }), ' plays'))),
+      '👆 Con he, she e it el verbo lleva una «s» al final.',
+      'Palabras que suelen acompañarlo: always (siempre), usually (normalmente), every day (todos los días), never (nunca). Ejemplo: «She always plays soccer».',
+      h('h3', { text: '📝 Reglas para agregar la «s» con he, she e it (tercera persona)' }),
+      'Toca cada ejemplo 🔊 para escucharlo.',
+      ...RULES.map(ruleCard),
+      'Son 11 secciones y dura unos 30 minutos. Ganarás ⭐ con cada acierto. ¡Éxitos!',
+      h('div', { class: 'row' },
+        h('button', { class: 'btn alt', text: '🔊 Escuchar explicación', onclick: () => Voice.speak(speech) }),
+        h('button', { class: 'btn', text: 'Empezar ➜', onclick: () => Nav.next() }))));
+  }
+});
+
+const vocabSection = () => ({
+  id: 'vocab', icon: '📚', label: 'Vocabulario',
+  mount(el) {
+    el.append(card('📚 Vocabulario', 'Toca los botones 🔊 para escuchar cada palabra y su oración. ¡Repite en voz alta!',
+      h('div', { class: 'vgrid' }, ...WORDS.map(w => h('div', { class: 'vcard' },
+        h('div', { class: 'ic', text: w.ic }), h('div', { class: 'en', text: w.en }), h('b', { text: w.es }),
+        h('small', { text: `he/she/it → ${w.s3}` }), h('small', { text: w.ex }), h('small', { text: w.exEs }),
+        h('div', { class: 'row' },
+          h('button', { class: 'btn alt', text: '🔊 Palabra', onclick: () => { Sfx.play('click'); Voice.speak(w.en); } }),
+          h('button', { class: 'btn', text: '🔊 Oración', onclick: () => { Sfx.play('click'); Voice.speak(w.ex); } })))))));
+  }
+});
+
+function choiceSection({ id, icon, label, help, items }) {
+  return {
+    id, icon, label,
+    mount(el) {
+      let i = 0;
+      const body = h('div');
+      el.append(card(`${icon} ${label}`, help, body));
+      const show = () => {
+        if (i >= items.length) return finishSection(body, '¡Sección completada!');
+        const it = items[i]; let sel = null, tries = 0;
+        const fb = h('p', { class: 'fb' });
+        const opts = it.opts.map((o, k) => h('button', {
+          class: 'opt', text: o,
+          onclick: () => { sel = k; opts.forEach((b, j) => b.classList.toggle('sel', j === k)); Sfx.play('click'); }
+        }));
+        const check = h('button', { class: 'btn alt', text: 'Verificar ✔' });
+        const next = h('button', { class: 'btn', text: i + 1 < items.length ? 'Siguiente ➜' : 'Terminar 🏁', style: 'display:none', onclick: () => { i++; show(); } });
+        check.onclick = () => {
+          if (sel === null) { fb.textContent = 'Primero elige una respuesta 👆'; return; }
+          if (sel === it.a) {
+            Sfx.play('ok'); confetti(10); State.add(tries ? 0 : 1);
+            opts[sel].classList.add('good'); opts.forEach(b => b.disabled = true);
+            fb.textContent = '¡Correcto! 🎉'; check.style.display = 'none'; next.style.display = '';
+            if (it.say) Voice.speak(it.say);
+          } else {
+            tries++; Sfx.play('bad'); fb.textContent = '¡Casi! Inténtalo de nuevo 💪';
+            const wrong = opts[sel]; wrong.classList.remove('sel'); wrong.classList.add('shake');
+            setTimeout(() => wrong.classList.remove('shake'), 450); sel = null;
+          }
+        };
+        body.replaceChildren(
+          h('div', { class: 'prog', text: `Pregunta ${i + 1} de ${items.length}` }),
+          it.say ? h('div', { class: 'row' }, h('button', { class: 'btn', text: '🔊 Escuchar', onclick: () => Voice.speak(it.say) })) : h('div', { class: 'q', text: it.q }),
+          ...opts, h('div', { class: 'row' }, check, next), fb);
+      };
+      show();
+    }
+  };
+}
+
+const matchSection = () => ({
+  id: 'match', icon: '🔗', label: 'Emparejar',
+  mount(el) {
+    const data = WORDS.slice(0, 6), left = data.map(w => w.en), right = shuffle(data.map(w => w.es));
+    const colors = ['#ff4fa3', '#27c7e8', '#e8b800', '#8a5cff', '#ff8a3d', '#1ec98f'];
+    const pairs = new Map(), locked = new Set(); let selL = null;
+    const grid = h('div', { class: 'match' }), fb = h('p', { class: 'fb' });
+    const btn = (text, color, lock, pick, fn) => {
+      const b = h('button', { class: 'm' + (lock ? ' lock' : '') + (pick ? ' pick' : ''), text, onclick: fn });
+      if (color) b.style.cssText = `background:${color}33;border-color:${color}`;
+      return b;
+    };
+    const draw = () => grid.replaceChildren(
+      h('div', { class: 'col' }, ...left.map((t, k) => btn(t, pairs.has(k) ? colors[k] : '', locked.has(k), selL === k, () => {
+        if (locked.has(k)) return; Sfx.play('click'); pairs.delete(k); selL = k; draw();
+      }))),
+      h('div', { class: 'col' }, ...right.map((t, k) => {
+        const l = [...pairs].find(([, r]) => r === k)?.[0];
+        return btn(t, l !== undefined ? colors[l] : '', l !== undefined && locked.has(l), false, () => {
+          if (selL === null) { fb.textContent = 'Primero toca una palabra en inglés 👈'; return; }
+          if (l !== undefined && locked.has(l)) return;
+          Sfx.play('click'); if (l !== undefined) pairs.delete(l);
+          pairs.set(selL, k); selL = null; draw();
+        });
+      })));
+    const verify = () => {
+      let good = 0;
+      for (const [l, r] of [...pairs]) {
+        if (right[r] === data[l].es) { locked.add(l); good++; State.add(1); } else pairs.delete(l);
+      }
+      if (locked.size === data.length) return finishSection(body, '¡Todas las parejas correctas!');
+      Sfx.play(good ? 'ok' : 'bad');
+      fb.textContent = `Parejas correctas: ${locked.size} de ${data.length}. Las incorrectas se soltaron, ¡inténtalo otra vez!`;
+      draw();
+    };
+    const body = h('div', {}, grid, fb, h('div', { class: 'row' }, h('button', { class: 'btn alt', text: 'Verificar ✔', onclick: verify })));
+    el.append(card('🔗 Emparejar', 'Toca una palabra en inglés y luego su significado en español. Cuando termines, pulsa «Verificar».', body));
+    draw();
+  }
+});
+
+const scrambleSection = () => ({
+  id: 'scramble', icon: '🔀', label: 'Revoltijo',
+  mount(el) {
+    const items = ['play', 'study', 'sleep', 'drink', 'watch'].map(en => WORDS.find(w => w.en === en));
+    let i = 0; const body = h('div');
+    el.append(card('🔀 Revoltijo', 'Ordena las letras para formar la palabra en inglés. Toca las letras en orden. Si te equivocas, toca una letra de arriba para quitarla.', body));
+    const round = () => {
+      if (i >= items.length) return finishSection(body, '¡Revoltijo resuelto!');
+      const w = items[i], n = w.en.length; let letters, used = [], tries = 0;
+      do { letters = shuffle([...w.en]); } while (letters.join('') === w.en);
+      const slots = h('div', { class: 'slots' }), pool = h('div', { class: 'slots' }), fb = h('p', { class: 'fb' });
+      const next = h('button', { class: 'btn', text: 'Siguiente ➜', style: 'display:none', onclick: () => { i++; round(); } });
+      const paint = () => {
+        slots.replaceChildren(...Array.from({ length: n }, (_, p) => used[p] === undefined ? h('span', { class: 'tile empty' }) :
+          h('button', { class: 'tile', text: letters[used[p]], onclick: () => { used.splice(p, 1); Sfx.play('click'); paint(); } })));
+        pool.replaceChildren(...letters.map((L, k) => {
+          const b = h('button', { class: 'tile', text: L, onclick: () => { if (used.length < n) { used.push(k); Sfx.play('click'); paint(); } } });
+          b.disabled = used.includes(k); return b;
+        }));
+      };
+      const check = h('button', {
+        class: 'btn alt', text: 'Verificar ✔', onclick: () => {
+          if (used.length < n) { fb.textContent = 'Completa todas las letras 🔤'; return; }
+          if (used.map(k => letters[k]).join('') === w.en) {
+            Sfx.play('ok'); confetti(10); Voice.speak(w.en); State.add(tries ? 0 : 1);
+            fb.textContent = '¡Correcto! 🎉'; check.style.display = 'none'; next.style.display = '';
+          } else { tries++; Sfx.play('bad'); fb.textContent = 'Todavía no. ¡Inténtalo de nuevo! 💪'; used = []; paint(); }
+        }
+      });
+      body.replaceChildren(h('div', { class: 'prog', text: `Palabra ${i + 1} de ${items.length}` }),
+        h('p', { class: 'q', text: `${w.ic} Significa: «${w.es}»` }), slots, pool, h('div', { class: 'row' }, check, next), fb);
+      paint();
+    };
+    round();
+  }
+});
+
+function buildGrid(words, n) {
+  const g = Array.from({ length: n }, () => Array(n).fill(''));
+  for (const w of [...words].sort((a, b) => b.length - a.length)) {
+    let placed = false;
+    for (let t = 0; t < 400 && !placed; t++) {
+      const vertical = Math.random() < .5;
+      const r = rnd(vertical ? n - w.length + 1 : n), c = rnd(vertical ? n : n - w.length + 1);
+      const cells = [...w].map((_, k) => [r + (vertical ? k : 0), c + (vertical ? 0 : k)]);
+      if (cells.every(([y, x]) => !g[y][x])) { cells.forEach(([y, x], k) => g[y][x] = w[k]); placed = true; }
+    }
+    if (!placed) return buildGrid(words, n);
+  }
+  return g.map(row => row.map(ch => ch || String.fromCharCode(65 + rnd(26))));
+}
+const straightLine = (a, b) => {
+  if (a[0] !== b[0] && a[1] !== b[1]) return null;
+  const dr = Math.sign(b[0] - a[0]), dc = Math.sign(b[1] - a[1]), len = Math.max(Math.abs(b[0] - a[0]), Math.abs(b[1] - a[1])) + 1;
+  return Array.from({ length: len }, (_, k) => [a[0] + dr * k, a[1] + dc * k]);
+};
+
+const searchSection = () => ({
+  id: 'search', icon: '🔎', label: 'Sopa de letras',
+  mount(el) {
+    const N = 9, list = WORDS.map(w => ({ ...w, key: w.en.toUpperCase() })), grid = buildGrid(list.map(w => w.key), N);
+    const found = new Set(), foundCells = new Set(); let a = null, b = null;
+    const board = h('div', { class: 'ws' }), clues = h('div', { class: 'chips' }), fb = h('p', { class: 'fb' });
+    board.style.gridTemplateColumns = `repeat(${N},1fr)`;
+    const cells = grid.map((row, r) => row.map((ch, c) => h('button', {
+      text: ch, onclick: () => { Sfx.play('click'); if (!a || b) { a = [r, c]; b = null; } else b = [r, c]; paint(); }
+    })));
+    board.append(...cells.flat());
+    const selection = () => a ? (b ? straightLine(a, b) : [a]) : [];
+    const paint = () => {
+      const sel = new Set((selection() || [a, b].filter(Boolean)).map(p => p.join()));
+      cells.forEach((row, r) => row.forEach((btn, c) => {
+        btn.className = foundCells.has(`${r},${c}`) ? 'found' : sel.has(`${r},${c}`) ? 'sel' : '';
+      }));
+      clues.replaceChildren(...list.map(w => h('span', { class: 'chip', text: found.has(w.key) ? `${w.es} → ${w.key} ✔` : w.es })));
+    };
+    const verify = () => {
+      const path = b && straightLine(a, b);
+      if (!path) { fb.textContent = 'Toca la primera y la última letra en línea recta (horizontal o vertical).'; return; }
+      const word = path.map(([r, c]) => grid[r][c]).join(), hit = list.find(w => !found.has(w.key) && (w.key === word || [...w.key].reverse().join('') === word));
+      if (hit) {
+        found.add(hit.key); path.forEach(p => foundCells.add(p.join())); State.add(1);
+        Sfx.play('ok'); Voice.speak(hit.en); fb.textContent = `¡Encontraste «${hit.es}»! 🎉`;
+        a = b = null; paint();
+        if (found.size === list.length) finishSection(body, '¡Encontraste todas las palabras!');
+      } else { Sfx.play('bad'); fb.textContent = 'Esa no es una palabra de la lista. ¡Sigue buscando! 🔍'; a = b = null; paint(); }
+    };
+    const body = h('div', {}, clues, board, fb, h('div', { class: 'row' }, h('button', { class: 'btn alt', text: 'Verificar ✔', onclick: verify })));
+    el.append(card('🔎 Sopa de letras', 'Busca en inglés las palabras que significan lo que dice cada pista. Están en horizontal o vertical (también al revés). Toca la primera y la última letra y pulsa «Verificar».', body));
+    paint();
+  }
+});
+
+const memorySection = () => ({
+  id: 'memory', icon: '🃏', label: 'Memoria',
+  mount(el) {
+    const cards = shuffle(WORDS.slice(0, 6).flatMap((w, id) => [{ id, t: w.en, en: true }, { id, t: w.es, en: false }]));
+    let open = [], busy = false, moves = 0, pairsDone = 0;
+    const fb = h('p', { class: 'fb', text: 'Movimientos: 0' }), grid = h('div', { class: 'memg' });
+    grid.append(...cards.map(c => {
+      const b = h('button', { class: 'mem', 'aria-label': 'Carta' }, h('span', { class: 'inner' },
+        h('span', { class: 'face front', text: '❓' }), h('span', { class: 'face back', text: c.t })));
+      b.onclick = () => {
+        if (busy || open.includes(c) || b.classList.contains('done')) return;
+        Sfx.play('flip'); b.classList.add('on'); if (c.en) Voice.speak(c.t);
+        open.push({ ...c, b });
+        if (open.length < 2) return;
+        moves++; fb.textContent = `Movimientos: ${moves}`;
+        const [x, y] = open;
+        if (x.id === y.id) {
+          setTimeout(() => Sfx.play('ok'), 500); [x, y].forEach(o => o.b.classList.add('done')); open = []; State.add(1);
+          if (++pairsDone === 6) setTimeout(() => finishSection(body, '¡Memoria perfecta!'), 900);
+        } else {
+          busy = true;
+          setTimeout(() => { [x, y].forEach(o => o.b.classList.remove('on')); open = []; busy = false; }, 1000);
+        }
+      };
+      c.btn = b; return b;
+    }));
+    const body = h('div', {}, grid, fb);
+    el.append(card('🃏 Memoria', 'Encuentra las parejas: cada palabra en inglés va con su significado en español. ¡Escucha cómo suena cada palabra en inglés!', body));
+  }
+});
+
+const POP_SVG = `<svg viewBox="0 0 300 320" class="pop" role="img" aria-label="Paleta que se derrite bajo el sol">
+<defs>
+<linearGradient id="sk1" x1="0" y1="0" x2="0" y2="1"><stop offset="0" stop-color="#6fe0ff"/><stop offset="1" stop-color="#c6b4ff"/></linearGradient>
+<linearGradient id="sk2" x1="0" y1="0" x2="0" y2="1"><stop offset="0" stop-color="#ff9a3d"/><stop offset="1" stop-color="#ff4f6d"/></linearGradient>
+<linearGradient id="pg" x1="0" y1="0" x2=".6" y2="1" spreadMethod="reflect"><stop offset="0" stop-color="#ff4fa3"/><stop offset=".5" stop-color="#ff8a3d"/><stop offset="1" stop-color="#ffd23f"/><animateTransform attributeName="gradientTransform" type="translate" values="0 -.3;0 .3;0 -.3" dur="5s" repeatCount="indefinite"/></linearGradient>
+<clipPath id="bc"><path d="M45 190V70a55 55 0 0 1 110 0V190a10 10 0 0 1-10 10H55a10 10 0 0 1-10-10Z"/></clipPath>
+</defs>
+<rect width="300" height="320" fill="url(#sk1)"/>
+<rect class="hot" width="300" height="320" fill="url(#sk2)"/>
+<g class="frost"><circle cx="30" cy="100" r="3" fill="#fff" style="animation-delay:0s"/><circle cx="270" cy="170" r="3.5" fill="#fff" style="animation-delay:0.4s"/><circle cx="55" cy="230" r="2.5" fill="#fff" style="animation-delay:0.8s"/><circle cx="250" cy="240" r="3" fill="#fff" style="animation-delay:0.2s"/><circle cx="110" cy="25" r="2.5" fill="#fff" style="animation-delay:1.1s"/><circle cx="20" cy="160" r="2" fill="#fff" style="animation-delay:0.6s"/></g>
+<g class="sun"><g class="rays" stroke="#ffd23f" stroke-width="5" stroke-linecap="round"><path d="M279 62h10M269 86l7 7M245 96v10M221 86l-7 7M211 62h-10M221 38l-7-7M245 28V18M269 38l7-7"/></g>
+<circle cx="245" cy="62" r="26" fill="#ffd23f"/><circle cx="237" cy="57" r="3" fill="#23224a"/><circle cx="253" cy="57" r="3" fill="#23224a"/><path d="M235 68Q245 78 255 68" stroke="#23224a" stroke-width="3" fill="none" stroke-linecap="round"/></g>
+<g class="cloud" fill="#fff"><ellipse cx="60" cy="50" rx="30" ry="12"/><ellipse cx="82" cy="42" rx="20" ry="12"/><ellipse cx="42" cy="44" rx="16" ry="9"/></g>
+<g class="rainbow" fill="none" stroke-width="9" stroke-linecap="round"><path d="M25 270A125 125 0 0 1 275 270" stroke="#ff4f6d"/><path d="M35 270A115 115 0 0 1 265 270" stroke="#ffd23f"/><path d="M45 270A105 105 0 0 1 255 270" stroke="#2ee6a6"/></g>
+<g class="heat" fill="none" stroke="#fff" stroke-opacity=".6" stroke-width="3" stroke-linecap="round"><path d="M30 215q8-14 0-28t0-28"/><path d="M270 225q8-14 0-28t0-28"/><path d="M62 265q8-12 0-24"/></g>
+<rect y="292" width="300" height="28" fill="#ffe0a3"/>
+<g transform="translate(50 30)">
+<ellipse class="puddle" cx="100" cy="266" rx="34" ry="7" fill="#ff7eb6" opacity=".85"/>
+<rect x="90" y="190" width="20" height="76" rx="10" fill="#e8c07a"/>
+<g class="drops"><g transform="translate(58 200)"><path class="dr d1" d="M0-7C3-2 5 0 5 3a5 5 0 0 1-10 0C-5 0-3-2 0-7Z"/></g><g transform="translate(74 204)"><path class="dr d2" d="M0-7C3-2 5 0 5 3a5 5 0 0 1-10 0C-5 0-3-2 0-7Z"/></g><g transform="translate(126 204)"><path class="dr d3" d="M0-7C3-2 5 0 5 3a5 5 0 0 1-10 0C-5 0-3-2 0-7Z"/></g><g transform="translate(142 200)"><path class="dr d4" d="M0-7C3-2 5 0 5 3a5 5 0 0 1-10 0C-5 0-3-2 0-7Z"/></g><g transform="translate(100 206)"><path class="dr d5" d="M0-7C3-2 5 0 5 3a5 5 0 0 1-10 0C-5 0-3-2 0-7Z"/></g></g>
+<g class="bob"><g class="body">
+<path d="M45 190V70a55 55 0 0 1 110 0V190a10 10 0 0 1-10 10H55a10 10 0 0 1-10-10Z" fill="url(#pg)"/>
+<g clip-path="url(#bc)"><rect class="shine" x="20" y="10" width="26" height="200" fill="#fff" opacity=".3"/></g>
+<path d="M60 75a40 40 0 0 1 28-34" stroke="#fff" stroke-width="7" stroke-linecap="round" fill="none" opacity=".6"/>
+<rect x="72" y="36" width="10" height="4" rx="2" fill="#27e1ff" transform="rotate(30 77 38)"/><rect x="118" y="40" width="10" height="4" rx="2" fill="#fff" transform="rotate(-40 123 42)"/><rect x="96" y="54" width="10" height="4" rx="2" fill="#8a5cff" transform="rotate(75 101 56)"/><rect x="66" y="160" width="10" height="4" rx="2" fill="#fff" transform="rotate(-20 71 162)"/><rect x="124" y="165" width="10" height="4" rx="2" fill="#27e1ff" transform="rotate(50 129 167)"/><rect x="98" y="172" width="10" height="4" rx="2" fill="#2ee6a6" transform="rotate(-60 103 174)"/>
+<circle cx="68" cy="118" r="7" fill="#ff2e93" opacity=".35"/><circle cx="132" cy="118" r="7" fill="#ff2e93" opacity=".35"/>
+<g class="eyes"><circle cx="82" cy="100" r="7" fill="#23224a"/><circle cx="118" cy="100" r="7" fill="#23224a"/><circle cx="84" cy="98" r="2.5" fill="#fff"/><circle cx="120" cy="98" r="2.5" fill="#fff"/></g>
+<path class="brow bl" d="M72 84h18" stroke="#23224a" stroke-width="4.5" stroke-linecap="round"/><path class="brow br" d="M110 84h18" stroke="#23224a" stroke-width="4.5" stroke-linecap="round"/>
+<path class="mouth" d="M84 124Q100 142 116 124" stroke="#23224a" stroke-width="5" stroke-linecap="round" fill="none"/>
+<path class="sweat" d="M144 70c3 5 5 8 5 11a5 5 0 0 1-10 0c0-3 2-6 5-11Z" fill="#7fe7ff" stroke="#fff" stroke-width="1.5"/>
+<g class="shades"><rect x="68" y="90" width="28" height="18" rx="7" fill="#23224a"/><rect x="104" y="90" width="28" height="18" rx="7" fill="#23224a"/><path d="M96 97h8" stroke="#23224a" stroke-width="4"/><path d="M73 95h9" stroke="#fff" stroke-opacity=".5" stroke-width="3" stroke-linecap="round"/></g>
+</g></g></g>
+<g class="stars"><g transform="translate(40 120)"><path d="M0-9L2.5-2.5 9 0 2.5 2.5 0 9-2.5 2.5-9 0-2.5-2.5Z" fill="#ffd23f" style="animation-delay:0s"/></g><g transform="translate(262 120)"><path d="M0-9L2.5-2.5 9 0 2.5 2.5 0 9-2.5 2.5-9 0-2.5-2.5Z" fill="#ffd23f" style="animation-delay:0.2s"/></g><g transform="translate(70 50)"><path d="M0-9L2.5-2.5 9 0 2.5 2.5 0 9-2.5 2.5-9 0-2.5-2.5Z" fill="#ffd23f" style="animation-delay:0.4s"/></g><g transform="translate(200 40)"><path d="M0-9L2.5-2.5 9 0 2.5 2.5 0 9-2.5 2.5-9 0-2.5-2.5Z" fill="#ffd23f" style="animation-delay:0.1s"/></g><g transform="translate(20 200)"><path d="M0-9L2.5-2.5 9 0 2.5 2.5 0 9-2.5 2.5-9 0-2.5-2.5Z" fill="#ffd23f" style="animation-delay:0.3s"/></g><g transform="translate(285 210)"><path d="M0-9L2.5-2.5 9 0 2.5 2.5 0 9-2.5 2.5-9 0-2.5-2.5Z" fill="#ffd23f" style="animation-delay:0.5s"/></g></g>
+<g class="splash"></g>
+</svg>`;
+
+const popsicleSection = () => ({
+  id: 'pop', icon: '🍦', label: 'Paleta',
+  mount(el) {
+    const MAX = 6, MOUTHS = ['M84 124Q100 142 116 124', 'M86 132Q100 132 114 132', 'M84 140Q100 118 116 140'];
+    const rounds = [{ w: 'SWIM', hint: 'nadar' }, { w: 'SLEEP', hint: 'dormir' }, { w: 'DRINK', hint: 'beber' }];
+    let r = 0, guessed, errors, over;
+    const stage = h('div'); stage.innerHTML = POP_SVG;
+    const svg = stage.firstElementChild, mouth = svg.querySelector('.mouth'), splashLayer = svg.querySelector('.splash');
+    const wordEl = h('div', { class: 'slots big' }), info = h('p', { class: 'fb' }), kb = h('div', { class: 'kb' }), actions = h('div', { class: 'row' });
+    const splash = () => {
+      for (let k = 0; k < 9; k++) {
+        const c = document.createElementNS('http://www.w3.org/2000/svg', 'circle');
+        c.setAttribute('class', 'sp'); c.setAttribute('cx', 150 + rnd(50) - 25); c.setAttribute('cy', 294);
+        c.setAttribute('r', 2 + rnd(3)); c.setAttribute('fill', '#ff7eb6');
+        c.style.setProperty('--dx', (rnd(70) - 35) + 'px'); c.style.setProperty('--dy', -(25 + rnd(45)) + 'px');
+        splashLayer.append(c); setTimeout(() => c.remove(), 900);
+      }
+    };
+    const jolt = () => svg.animate([{ transform: 'translateX(0)' }, { transform: 'translateX(-7px) rotate(-1deg)' }, { transform: 'translateX(7px) rotate(1deg)' }, { transform: 'none' }], { duration: 350 });
+    const paint = () => {
+      const { w, hint } = rounds[r];
+      wordEl.replaceChildren(...[...w].map(L => h('span', { class: 'tile', text: guessed.has(L) ? L : '' })));
+      svg.style.setProperty('--m', errors / MAX);
+      mouth.setAttribute('d', MOUTHS[errors < 2 ? 0 : errors < 4 ? 1 : 2]);
+      info.textContent = `Pista: «${hint}» · Vidas: ${'❤️'.repeat(MAX - errors)}${'🤍'.repeat(errors)}`;
+    };
+    const end = () => { over = true; kb.querySelectorAll('button').forEach(b => b.disabled = true); };
+    const guess = (L, b) => {
+      if (over) return;
+      b.disabled = true; guessed.add(L);
+      const { w } = rounds[r];
+      if (w.includes(L)) Sfx.play('ok'); else { errors++; Sfx.play('drip'); setTimeout(() => Sfx.play('bad'), 150); splash(); jolt(); }
+      paint();
+      if ([...w].every(x => guessed.has(x))) {
+        end(); svg.classList.add('win'); Sfx.play('win'); confetti(50); Voice.speak(w.toLowerCase()); State.add(2);
+        const last = r + 1 >= rounds.length;
+        actions.replaceChildren(h('button', { class: 'btn', text: last ? 'Continuar ➜' : 'Siguiente paleta 🍦', onclick: () => { if (last) Nav.next(); else { r++; start(); } } }));
+        info.textContent = `¡Salvaste la paleta! 😎🌈 La palabra era «${w.toLowerCase()}».`;
+      } else if (errors >= MAX) {
+        end(); svg.classList.add('lose'); splash(); setTimeout(splash, 300);
+        info.textContent = '¡La paleta se derritió! 😢 Pero puedes intentarlo otra vez.';
+        actions.replaceChildren(h('button', { class: 'btn alt', text: 'Reintentar 🔄', onclick: start }));
+      }
+    };
+    const start = () => {
+      guessed = new Set(); errors = 0; over = false; actions.replaceChildren(); svg.classList.remove('win', 'lose');
+      kb.replaceChildren(...[...'ABCDEFGHIJKLMNOPQRSTUVWXYZ'].map(L => h('button', { class: 'key', text: L, onclick: e => guess(L, e.currentTarget) })));
+      paint();
+    };
+    el.append(card('🍦 Salva la paleta', 'Adivina la palabra en inglés letra por letra. Cada error calienta el sol y derrite la paleta. ¡Tienes 6 vidas! Si la salvas, ¡aparecerá un arcoíris!',
+      h('div', { class: 'popwrap' }, stage, h('div', {}, wordEl, info)), kb, actions));
+    start();
+  }
+});
+
+const finalSection = () => ({
+  id: 'final', icon: '🏆', label: 'Final',
+  mount(el) {
+    const s = State.stars;
+    el.append(card('🏆 ¡Lo lograste!',
+      h('div', { class: 'q', text: `Conseguiste ⭐ ${s} estrellas` }),
+      s >= 30 ? '¡Increíble! Eres un campeón del presente simple. 🌟' : s >= 15 ? '¡Muy bien! Ya dominas casi todo. Repite las secciones que quieras. 💪' : '¡Buen comienzo! Repite las secciones para ganar más estrellas. 😊',
+      'Recuerda: con I, you, we y they el verbo no cambia; con he, she e it lleva «s» (o «es» como en watches y «ies» como en studies).',
+      h('div', { class: 'row' }, h('button', { class: 'btn', text: '🔁 Volver al inicio', onclick: () => Nav.go('inicio') }))));
+    Sfx.play('win'); confetti(60); Voice.speak([ES('¡Felicidades! Terminaste la clase. ¡Hasta pronto!'), 'See you soon!']);
+  }
+});
+
+/* ---------- Navigation ---------- */
+const Nav = {
+  sections: [], current: -1,
+  init(sections) {
+    this.sections = sections;
+    $('#menu').append(...sections.map(s => h('button', { id: 'nav-' + s.id, onclick: () => { Sfx.play('click'); this.go(s.id); } }, h('i', { text: s.icon }), s.label)));
+    this.go(sections[0].id);
+  },
+  go(id) {
+    Voice.stop();
+    this.current = this.sections.findIndex(s => s.id === id);
+    const sec = h('section', { class: 'sec' });
+    $('#main').replaceChildren(sec);
+    this.sections[this.current].mount(sec);
+    this.sections.forEach((s, k) => $('#nav-' + s.id).classList.toggle('on', k === this.current));
+    $('#nav-' + id).scrollIntoView({ inline: 'center', block: 'nearest', behavior: 'smooth' });
+    window.scrollTo({ top: 0, behavior: 'smooth' });
+  },
+  next() { this.go(this.sections[Math.min(this.current + 1, this.sections.length - 1)].id); }
+};
+
+/* ---------- Decorative background ---------- */
+$('#bg').append(...['☀️', '🍦', '🌴', '🏖️', '🩴', '🍉', '🐚', '🌊'].map((e, k) => {
+  const s = h('span', { text: e });
+  s.style.cssText = `left:${6 + k * 12}%;font-size:${28 + (k % 3) * 14}px;animation-duration:${14 + k * 2}s;animation-delay:${-k * 3}s`;
+  return s;
+}));
+
+/* ---------- Start ---------- */
+Nav.init([
+  introSection(), vocabSection(),
+  choiceSection({ id: 'quiz', icon: '🧠', label: 'Quiz', help: 'Elige la forma correcta del verbo para completar la oración y pulsa «Verificar».', items: QUIZ }),
+  matchSection(), scrambleSection(), searchSection(), memorySection(), popsicleSection(),
+  choiceSection({ id: 'listen', icon: '🎧', label: 'Escucha', help: 'Pulsa «Escuchar» (puedes repetirlo) y elige la traducción correcta en español.', items: LISTEN }),
+  choiceSection({ id: 'tf', icon: '✅', label: 'Verdadero o falso', help: 'Lee cada frase y decide si es verdadera o falsa.', items: TRUEFALSE }),
+  finalSection()
+]);
+if ('speechSynthesis' in window) speechSynthesis.getVoices();
+</script>
+</body>
+</html>
